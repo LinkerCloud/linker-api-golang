@@ -103,7 +103,7 @@ for _, o := range orders.Items { ... }
 
 ## Order statuses
 
-Outbound orders progress through these status codes:
+Outbound orders typically progress through these status codes:
 
 | Status | Meaning |
 |--------|---------|
@@ -119,6 +119,8 @@ Outbound orders progress through these status codes:
 | `D` | Delivered (optional) |
 | `DC` | Delivery cancelled (optional) |
 | `A` | Cancelled |
+
+Note that this depends on an exact workflow configuration.
 
 Inbound (supplier) orders use: `N` → `V` → `M` → `Y` (completed/delivery received).
 
